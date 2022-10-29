@@ -25,12 +25,6 @@ public class DataGenerator {
         return cities[faker.number().numberBetween(0, cities.length - 1)];
     }
 
-    //public static String generateCity() {
-        //var sities = new String[]{
-                //"Москва", "Санкт-Петербург", "Уфа", "Ярославль", "Пермь", "Казань", "Омск", "Курск"};
-        //return sities[new Random().nextInt(sities.length)];
-    //}
-
     public static String generateName(String locale) {
         Faker faker = new Faker(new Locale(locale));
         return faker.name().lastName() + " " + faker.name().firstName();
